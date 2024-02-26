@@ -1,0 +1,200 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgb(227, 200, 131),
+    rgb(237, 127, 202)
+  ); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border: 2px soild red;
+  margin-top: 70px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(196, 193, 198);
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(150, 129, 232, 0.35) 0px 5px 15px;
+}
+
+.grid-item img {
+  width: 100%;
+}
+.upperInput {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  gap: 15px;
+}
+
+.add-book {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(200, 101, 215);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.add-book input {
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(253, 182, 253);
+  border: none;
+  border-radius: 10px;
+}
+.add-book button {
+  width: 200px;
+  height: 30px;
+  background-color: rgb(129, 99, 237);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.EditDiv {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn button {
+  width: 60px;
+  height: 40px;
+  background-color: rgb(102, 102, 241);
+  border: none;
+  color: white;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+}
+.btn button:hover {
+  transform: scale(1.2);
+}
+.upperInput Link {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(102, 102, 241);
+  color: white;
+  border: none;
+}
+.upperInput input {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(248, 192, 246);
+  color: blue;
+}
+.add-book form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* html {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(227, 200, 131),
+    rgb(237, 127, 202)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+} */
+
+.EditDiv form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.EditDiv form input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+.EditDiv form button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgb(125, 125, 245);
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 80%;
+
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+  }
+  .grid-item {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+  }
+  .EditDiv {
+    width: auto;
+  }
+  .EditDiv form {
+    width: 80%;
+  }
+  .add-book {
+    width: auto;
+  }
+  .add-book form {
+    width: 100%;
+  }
+  .add-book form input {
+    width: 80%;
+  }
+}
